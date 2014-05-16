@@ -93,7 +93,7 @@ Ext.onReady(function() {
 		frame: false,
 		id: 'demoGrid',
 		renderTo: Ext.getBody(),
-        plugins: [new Ext.grid.plugin.CellEditing({clicksToEdit: 1})],
+        plugins: [new Ext.grid.plugin.CellEditing({clicksToEdit: 2})],
         store: store,
         columns: [{
 			header: 'ID',
