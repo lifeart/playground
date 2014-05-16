@@ -152,9 +152,9 @@ Ext.onReady(function() {
         },
 		{
 			header: 'IMG',
-            dataIndex: 'SmallPhotoName',
+            dataIndex: 'PhotoName',
             renderer: function(value){
-				return '<a href="/uploads/'+value+'" target="_blank"><img src="/uploads/'+value+'" style="height:20px;border-radius:2px;margin:1px;" /></a>';
+				return '<a href="/uploads/'+value+'" target="_blank"><img src="/uploads/preview_'+value+'" style="height:20px;border-radius:2px;margin:1px;" /></a>';
 			}
         },
 		{
