@@ -179,7 +179,7 @@ function userApp() {
 		this.loadInterval = setInterval(function() {self.loadAnyPage();},2500);
 	}
 	
-	this.run = function() {
+	this.init = function() {
 	
 		$('#app_menu>li').click(function(){
 			$('#app_menu>li').removeClass('active');
@@ -204,6 +204,7 @@ function userApp() {
 					self.loadSocial();
 				}
 			}
+			return false;
 		});
 	
 		this.set5pgs();
