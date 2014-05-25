@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" htmlscale="no">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veeam test page</title>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/veeam_style.css">
+
+  </head>
+  <body>
+  <div class="container">
+   <div class="app_page" id="page_1">
+		<div class="row">
+			<div class="page-header">
+			  <h1>Main content <small>page one </small></h1>
+			</div>
+		</div>
+		<div class="row">
+			<img src="http://static.schools.by/images/header-bg/img-16.jpg" alt="Test Image" class="img-thumbnail app_image">
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="nav nav-pills nav-stacked" id="app_menu">
+					<li class="active">
+						<a href="#page_1">
+							<span class="badge pull-right">4</span>
+							Page 1
+						</a>
+					</li>
+					<li><a href="#page_2">
+							<span class="badge pull-right">4</span>
+							Page 2</a></li>
+					<li>
+						<a href="#page_3">
+							<span class="badge pull-right">4</span>
+							Page 3
+						</a>
+					</li>
+					<li>
+						<a href="#page_4">
+							<span class="badge pull-right">4</span>
+							Page 4
+						</a>
+					</li>
+					<li>
+					<a href="#page_5">
+							<span class="badge pull-right">4</span>
+							Page 5
+						</a>
+					</li>	
+			</ul>
+			</div>
+			<div class="col-md-8">
+				<div class="jumbotron">
+					<h2>Pavel Durov</h2>
+					<p><small>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful...</small></p>
+				</div>
+			</div>
+		</div>
+   </div>
+   <div class="app_page" id="page_2">
+		<div class="row">
+			<div class="page-header">
+			  <h1>Secondary page content <small>page two</small></h1>
+			</div>
+		</div>
+   </div>
+   <div class="app_page" id="page_3">
+   		<div class="row">
+			<div class="page-header">
+			  <h1>Secondary page content <small>page three</small></h1>
+			</div>
+		</div>
+   </div>
+   <div class="app_page" id="page_4">
+   		<div class="row">
+			<div class="page-header">
+			  <h1>Secondary page content <small>page four</small></h1>
+			</div>
+		</div>		
+   </div>
+   <div class="app_page" id="page_5">
+   <div class="row">
+			<div class="page-header">
+			  <h1>Secondary page content <small>page five</small></h1>
+			</div>
+		</div>   
+	 <div class="row">
+		<center>
+			<div class="pluso" id="socialButtons" data-background="transparent" data-options="big,square,line,horizontal,counter,theme=02" data-services="vkontakte,facebook,twitter,google,moimir,evernote,livejournal,email">
+				<div class="alert alert-info">This is place for social buttons, HOVER ME</div>
+			</div>
+		</center>
+	</div>
+   </div>
+     </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/veeam_app.js"></script>
+  <script>
+	$(document).ready(function(){
+		var app = new userApp();
+		app.init();
+	});
+  </script>
+  </body>
+</html>
