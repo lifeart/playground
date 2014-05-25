@@ -148,9 +148,11 @@ function userApp() {
 		up = typeof up !== 'undefined' ? up : false;
 		var content = '';
 		this.loadFlags.pages[number] = true;
-		var text = '';
-		for (i=0;i<5;i++) text += this.getRandEl(this.content.texts);
-		for (i=0;i<this.newsPerPage;i++) content += this.contentTemplate(this.getRandEl(this.content.imgs),text);
+		for (i=0;i<this.newsPerPage;i++) {
+			var text = '';
+			for (j=0;j<5;j++) text += this.getRandEl(this.content.texts);
+			content += this.contentTemplate(this.getRandEl(this.content.imgs),text);
+		}
 		if (up == false) this.dom.pages[number].innerHTML = this.dom.pages[number].innerHTML+content;
 		else this.dom.pages[number].innerHTML = content+this.dom.pages[number].innerHTML;
 	}
