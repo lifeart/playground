@@ -179,7 +179,7 @@ function userApp() {
 		this.loadInterval = setInterval(function() {self.loadAnyPage();},2500);
 	}
 	
-	this.init = function() {
+	this.run = function() {
 	
 		$('#app_menu>li').click(function(){
 			$('#app_menu>li').removeClass('active');
